@@ -1,0 +1,17 @@
+<h1>Drive</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Size</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each driven}}
+      <tr>
+        <td><a href="{{this.webUrl}}">{{this.name}}</a></td>
+        <td>{{this.size}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
